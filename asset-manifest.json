@@ -1,15 +1,15 @@
 {
-  "main.css": "/starter-project/static/css/main.d0245803.chunk.css",
-  "main.js": "/starter-project/static/js/main.a3cfaa8f.chunk.js",
-  "main.js.map": "/starter-project/static/js/main.a3cfaa8f.chunk.js.map",
-  "runtime~main.js": "/starter-project/static/js/runtime~main.e55a89d9.js",
-  "runtime~main.js.map": "/starter-project/static/js/runtime~main.e55a89d9.js.map",
-  "static/js/2.f1380a99.chunk.js": "/starter-project/static/js/2.f1380a99.chunk.js",
-  "static/js/2.f1380a99.chunk.js.map": "/starter-project/static/js/2.f1380a99.chunk.js.map",
-  "static/js/3.398cb210.chunk.js": "/starter-project/static/js/3.398cb210.chunk.js",
-  "static/js/3.398cb210.chunk.js.map": "/starter-project/static/js/3.398cb210.chunk.js.map",
-  "index.html": "/starter-project/index.html",
-  "precache-manifest.53218e714ba18665778d90d98058c0bc.js": "/starter-project/precache-manifest.53218e714ba18665778d90d98058c0bc.js",
-  "service-worker.js": "/starter-project/service-worker.js",
-  "static/css/main.d0245803.chunk.css.map": "/starter-project/static/css/main.d0245803.chunk.css.map"
+  "main.css": "/React-TextUtils/static/css/main.d0245803.chunk.css",
+  "main.js": "/React-TextUtils/static/js/main.a3cfaa8f.chunk.js",
+  "main.js.map": "/React-TextUtils/static/js/main.a3cfaa8f.chunk.js.map",
+  "runtime~main.js": "/React-TextUtils/static/js/runtime~main.9757dd41.js",
+  "runtime~main.js.map": "/React-TextUtils/static/js/runtime~main.9757dd41.js.map",
+  "static/js/2.f1380a99.chunk.js": "/React-TextUtils/static/js/2.f1380a99.chunk.js",
+  "static/js/2.f1380a99.chunk.js.map": "/React-TextUtils/static/js/2.f1380a99.chunk.js.map",
+  "static/js/3.398cb210.chunk.js": "/React-TextUtils/static/js/3.398cb210.chunk.js",
+  "static/js/3.398cb210.chunk.js.map": "/React-TextUtils/static/js/3.398cb210.chunk.js.map",
+  "index.html": "/React-TextUtils/index.html",
+  "precache-manifest.d2d97b9ef7ef79b8f77197f0f4b6cb94.js": "/React-TextUtils/precache-manifest.d2d97b9ef7ef79b8f77197f0f4b6cb94.js",
+  "service-worker.js": "/React-TextUtils/service-worker.js",
+  "static/css/main.d0245803.chunk.css.map": "/React-TextUtils/static/css/main.d0245803.chunk.css.map"
 }

@@ -45,7 +45,7 @@ export default function Textform(props) {
      <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleClear}>Clear Area</button>
      <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleCopy}>{copyStatus}</button>
      <h1 className='text-warning'>Your Text Summary:</h1>
-     <p id="summary" className='text-light'>{text.replace(/\s{2,}/g, ' ').trim().split(" ").length} words and {text.replace(/\s{2,}/g, ' ').trim().length} characters</p>
+     <p id="summary" className='text-light'>{text.split(" ").filter((element)=> {return element.length!=0}).length} words and {text.replace(/\s{2,}/g, ' ').trim().length} characters</p>
     </div>
   )
 }

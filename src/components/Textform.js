@@ -24,6 +24,9 @@ export default function Textform(props) {
         event.currentTarget.classList.remove('btn-primary');
         event.currentTarget.classList.add('btn-dark');
         setCopyStatus("Copied!!")
+        setTimeout(() => {
+            setCopyStatus("Copy To Clipboard")
+        }, 1500);
         // alert("Copied Successfully")
 
     }
@@ -45,7 +48,8 @@ export default function Textform(props) {
      <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleClear}>Clear Area</button>
      <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleCopy}>{copyStatus}</button>
      <h1 className='text-warning'>Your Text Summary:</h1>
-     <p id="summary" className='text-light'>{text.split(" ").filter((element)=> {return element.length!=0}).length} words and {text.replace(/\s{2,}/g, ' ').trim().length} characters</p>
-    </div>
+     <p id="summary" className={`${props.summaryClasses}`}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.replace(/\s{2,}/g, ' ').trim().length} characters </p>
+     <p className={`${props.summaryClasses}`}>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minute(s) read </p>
+        </div>
   )
 }

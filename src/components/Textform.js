@@ -31,6 +31,11 @@ export default function Textform(props) {
 
     }
     
+    function charCount(text){
+        let char = text.replace(/\s/g,'')
+        return char.length
+    }
+    
     const handleOnChange = (event)=>{
         setText(event.target.value)
     }
@@ -43,13 +48,13 @@ export default function Textform(props) {
      <h1 className='text-light' id="heading">{props.heading}</h1>
      {/* <label htmlFor="Text" className="form-label">Enter your text below:</label> */}
      <textarea className="form-control bg-dark text-light border border-light" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
-     <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleUpClick}>Convert to Uppercase</button>
-     <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleLowClick}>Convert to Lowercase</button>
-     <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleClear}>Clear Area</button>
-     <button className="my-3 mx-2 btn btn-dark border border-light" onClick={handleCopy}>{copyStatus}</button>
+     <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleUpClick}>Convert to Uppercase</button>
+     <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleLowClick}>Convert to Lowercase</button>
+     <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleClear}>Clear Area</button>
+     <button disabled={text.length===0} className="my-3 mx-2 btn btn-dark border border-light" onClick={handleCopy}>{copyStatus}</button>
      <h1 className='text-warning'>Your Text Summary:</h1>
-     <p id="summary" className={`${props.summaryClasses}`}>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.replace(/\s{2,}/g, ' ').trim().length} characters </p>
-     <p className={`${props.summaryClasses}`}>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minute(s) read </p>
+     <p id="summary" className="text-light">{text.split(/\s+/).filter(((element)=>{return element.length!==0})).length} words and {charCount(text)} characters </p>
+     <p id="summary2" className="text-light">{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minute(s) read </p>
         </div>
   )
 }
